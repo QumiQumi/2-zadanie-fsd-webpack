@@ -1,0 +1,22 @@
+extends ../layout/main
+include ../../components/text-field/text-field
+include ../../components/iqdropdown/iqdropdown
+
+block variables
+  - var title = 'Demo';
+  - var description = 'FSD second task';
+
+block content
+  section
+    div
+      h1 This one is the sub-section or widget title
+      h2 Next one is the item title inside widgets
+      h3 This is a label or CTA text
+      |This is the body text which is used for most of the design, like paragraphs, lists, etc.
+    +text-field({placeholder:"Email"})
+    +text-field({value:"This is pretty awesome"})
+    +iqdropdown()
+  example-component
+
+
+block script
