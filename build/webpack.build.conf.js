@@ -1,8 +1,16 @@
 const merge = require("webpack-merge");
 const baseWebpackConfig = require("./webpack.config");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const buildWebpackConfig = merge(baseWebpackConfig, {
   mode: "production",
-  plugins: [],
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: `${baseWebpackConfig.externals.paths.dist}`,
+        to: `${baseWebpackConfig.externals.paths.docs}`,
+      },
+    ]),
+  ],
   /*module: {
     rules: [
       {

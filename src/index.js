@@ -4,11 +4,7 @@ import "../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.cs
 //JS
 import "./components/text-field/text-field";
 // import "./components/iqdropdown/iqdropdown";
-import "item-quantity-dropdown";
 import "../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min";
-//import "item-quantity-dropdown";
-
-//import "item-quantity-dropdown/lib/item-quantity-dropdown.css";
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);
