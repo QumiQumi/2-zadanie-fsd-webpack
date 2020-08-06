@@ -1,10 +1,11 @@
+"use strict";
 //SCSS
 import "./assets/scss/main.scss";
-import "../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css";
+
 //JS
+import "jquery";
 import "./components/text-field/text-field";
-// import "./components/iqdropdown/iqdropdown";
-import "../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min";
+import "./components/iqdropdown/iqdropdown";
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);
